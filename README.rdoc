@@ -1,6 +1,6 @@
 = WoWCombatLogParser
 
-Description goes here.
+Gem to parse wow combat logs and turn them into something usable
 
 == Contributing to WoWCombatLogParser
  
