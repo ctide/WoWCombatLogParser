@@ -2,7 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require 'shoulda'
 
-require 'WoWCombatLogParser' # and any other gems you need
+require File.expand_path('../../lib/WoWCombatLogParser.rb', __FILE__)
 
 RSpec.configure do |config|
   config.mock_with :rspec
