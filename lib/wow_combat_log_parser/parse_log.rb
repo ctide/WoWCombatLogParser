@@ -29,8 +29,7 @@ module WoWCombatLogParser
 
       @variables = lines.drop(2)
       @variables = @variables.join(" ").split(",")
-      @event_type = @variables[0]
-      if @event_type == "UNIT_DIED" && @variables[4].hex & @guid_mask == 0 then
+      if @variables[0] == "UNIT_DIED" && @variables[4].hex & @guid_mask == 0 then
         name = @variables[5][1..-2]
         @match_results.dead_players[name] = @time
       end
